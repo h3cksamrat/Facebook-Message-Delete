@@ -11,7 +11,7 @@ class Facebook:
 
     @classmethod
     def openBrowser(cls):
-        globals()['browser'] = webdriver.Chrome(executable_path=r'C:\Users\ACER\Desktop\Samrat\chromedriver.exe')
+        globals()['browser'] = webdriver.Chrome(executable_path=r'path_to_chromedriver.exe')
 
     def login(self):
         # opens facebook.com
@@ -49,7 +49,7 @@ class Facebook:
             delMenu.click()
 
 
-email = input("Email: ") or "samratneupane215@gmail.com"
+email = input("Email: ") or "default_email"
 # password = input("Password: ")
 password = getpass()
 
